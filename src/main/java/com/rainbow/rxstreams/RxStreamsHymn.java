@@ -1,4 +1,4 @@
-package com.rainbow;
+package com.rainbow.rxstreams;
 
 import rx.Observable;
 import rx.Subscriber;
@@ -17,7 +17,7 @@ import static java.util.Comparator.comparing;
 /**
  * Created by Administrator on 2016/11/5.
  */
-public class BlockingIOSample3 {
+public class RxStreamsHymn {
     public static void main(String[] args) {
         File dir = new File("C:\\Users\\Administrator\\Desktop\\tmp");
 

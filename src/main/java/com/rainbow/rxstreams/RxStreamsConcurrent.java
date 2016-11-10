@@ -1,20 +1,15 @@
-package com.rainbow;
+package com.rainbow.rxstreams;
 
 import rx.Observable;
-import rx.Observer;
 import rx.Scheduler;
 import rx.Subscriber;
-import rx.observables.AsyncOnSubscribe;
 import rx.schedulers.Schedulers;
 
-import java.io.File;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
 
 /**
  * Created by Administrator on 2016/11/5.
@@ -72,7 +67,7 @@ class Course {
     }
 }
 
-public class BlockingIOSample {
+public class RxStreamsConcurrent {
 
     public static Observable<User> retrieveUser(long userId) {
         return Observable.create(new Observable.OnSubscribe<User>() {
